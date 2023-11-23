@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="qixiao.ico" type="image/x-icon"/>  
+	<title>柒小工具箱</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		.table thead{
+			background-color: #dedbdb;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function newGuid()
+		{
+			var guid = "";
+			for (var i = 1; i <= 32; i++){
+				var n = Math.floor(Math.random()*16.0).toString(16);
+				guid +=   n;
+				if((i==8)||(i==12)||(i==16)||(i==20))
+					guid += "-";
+			}
+			return guid;    
+		}
+
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#bt_generate").click(function(){
+				var datetime = new Date();
+				$("#td_guid").html(newGuid());
+				$("#td_timestamp").html(datetime.getTime());
+				$("#td_datetime").html(datetime.toLocaleString());
+				//description的时间
+				$("#sp_descriptionTime").html(datetime.toLocaleString());
+			});
+		});
+	</script>
+</head>
+<body class="container">
+	<header class="row">
+		<a href="/" class="col-md-2" style="font-family: SimHei;font-size: 20px;text-align:center;margin-top: 30px;">
+			<span class="glyphicon glyphicon-home"></span>Home
+		</a>
+		<font class="col-md-4 col-md-offset-2" style="font-family: SimHei;font-size: 30px;text-align:center;margin-top: 30px;">
+			<a href="/xuanxue" style="cursor: pointer;">柒小工具箱</a>
+		</font>
+	</header>
+	<hr>
+	<!--这里写tab的标签-->
+	<ul id="myTab" class="nav nav-tabs">
+		<li class="active">
+			<a href="#tools" data-toggle="tab">Tools</a>
+		</li>
+		<li>
+			<a href="#links" data-toggle="tab">链接</a>
+		</li>
+	</ul>
+
+	<article id="myTabContent" class="tab-content">
+
+		<!-- 工具 -->
+		<section class="tab-pane fade in active" id="tools">
+			<p>
+				<table class="table table-bordered table-hover">
+					<caption><button class="btn btn-success" id="bt_generate">Generate Result</button></caption>
+					<thead>
+						<tr>
+							<th style="width: 30%">Type</th>
+							<th>Result</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>GUID</td>
+							<td id="td_guid">--</td>
+						</tr>
+						<tr>
+							<td>TimeStamp</td>
+							<td id="td_timestamp">--</td>
+						</tr>
+						<tr>
+							<td>DateTime</td>
+							<td id="td_datetime">--</td>
+						</tr>
+						<tr>
+							<td>Description</td>
+							<td id="td_description">
+								/*********************************************************<br>
+ 								* CopyRight: 7TINY CODE BUILDER. <br>
+ 								* Version: 5.0.0<br>
+ 								* Author: 7tiny<br>
+ 								* Address: Earth<br>
+ 								* Create: <span id="sp_descriptionTime">9999-12-31 23:59:59</span><br>
+ 								* Modify: <br>
+ 								* E-mail: dong@7tiny.com | sevenTiny@foxmail.com <br>
+ 								* GitHub: https://github.com/sevenTiny <br>
+ 								* Personal web site: http://www.7tiny.com <br>
+ 								* Technical WebSit: http://www.cnblogs.com/7tiny/ <br>
+ 								* Description: <br>
+ 								* Thx , Best Regards ~<br>
+ 								*********************************************************/
+ 							</td>
+						</tr>
+					</tbody>
+				</table>
+			</p>
+		</section> 
+
+		<!-- 常用链接 -->
+		<section class="tab-pane fade in" id="links">
+			<p>
+				<table class="table table-bordered table-hover">
+					<caption>常用链接</caption>
+					<thead>
+						<tr>
+							<th>标题</th>
+							<th>链接地址</th>
+							<th>简介</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Web安全色</td>
+							<td><a target="_blank" href="http://www.bootcss.com/p/websafecolors/">www.bootcss.com/p/websafecolors/</a></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</p>
+		</section> 
+
+	</article>
+</body>
+</html>

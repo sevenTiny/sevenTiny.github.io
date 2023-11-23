@@ -1,0 +1,856 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="icon" href="qixiao.ico" type="image/x-icon"/>  
+	<title>柒小玄学网</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		.top-margin-20:{
+			margin-top: 20px;
+		}
+		thead{
+			background-color: #EAE8E8;
+		}
+		thead th,td{
+			text-align: center;
+		}
+		tbody td:hover{
+			background-color: #BEF3B5;
+		}
+		.td-width-40{
+			width: 40%;
+		}
+	</style>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		});
+	</script>
+</head>
+<body class="container">
+	<header class="row">
+		<a href="/" class="col-md-2" style="font-family: SimHei;font-size: 20px;text-align:center;margin-top: 30px;">
+			<span class="glyphicon glyphicon-home"></span>Home
+		</a>
+		<font class="col-md-4 col-md-offset-2" style="font-family: SimHei;font-size: 30px;text-align:center;margin-top: 30px;">
+			<a href="/xuanxue" style="cursor: pointer;">柒小玄学网</a>
+		</font>
+	</header>
+	<hr>
+
+	<ul id="myTab" class="nav nav-tabs">
+		<li class="active">
+			<a href="#huangli" data-toggle="tab">黄历</a>
+		</li>
+		<li>
+			<a href="#xingzuo" data-toggle="tab">星座</a>
+		</li>
+		<li>
+			<a href="#shengxiao"  data-toggle="tab">生肖</a> 
+		</li>
+		<li>
+			<a href="#shengchengbazi" data-toggle="tab">生辰八字</a> 
+		</li>
+		<li>
+			<a href="#wuxing" data-toggle="tab">五行</a> 
+		</li>
+		<li>
+			<a href="#yuantiangangchenggujue" data-toggle="tab">袁天罡称骨诀</a> 
+		</li>
+	</ul>
+
+	<article id="myTabContent" class="tab-content">
+
+		<!-- 黄历 -->
+		<section class="tab-pane fade in active" id="huangli">
+			<p>
+				<!-- 六十甲子纳音表 -->
+				<table class="table table-bordered table-hover table-condensed">
+					<caption>六十甲子纳音表</caption>
+					<thead>
+						<tr>
+							<th>一</th>
+							<th>五行</th>
+							<th>二</th>
+							<th>五行</th>
+							<th>三</th>
+							<th>五行</th>
+							<th>四</th>
+							<th>五行</th>
+							<th>五</th>
+							<th>五行</th>
+							<th>六</th>
+							<th>五行</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>甲子</td>
+							<td rowspan="2" style="padding-top: 22px;">海中金</td>
+							<td>甲戌</td>
+							<td rowspan="2" style="padding-top: 22px;">山头火</td>
+							<td>甲申</td>
+							<td rowspan="2" style="padding-top: 22px;">泉中水</td>
+							<td>甲午</td>
+							<td rowspan="2" style="padding-top: 22px;">沙中金</td>
+							<td>甲辰</td>
+							<td rowspan="2" style="padding-top: 22px;">佛灯火</td>
+							<td>甲寅</td>
+							<td rowspan="2" style="padding-top: 22px;">大溪水</td>
+						</tr>
+						<tr>
+							<td>乙丑</td>
+							<td>乙亥</td>
+							<td>乙酉</td>
+							<td>乙未</td>
+							<td>乙巳</td>
+							<td>乙卯</td>
+						</tr>
+						<tr>
+							<td>丙寅</td>
+							<td rowspan="2" style="padding-top: 22px;">炉中火</td>
+							<td>丙子</td>
+							<td rowspan="2" style="padding-top: 22px;">涧下水</td>
+							<td>丙戌</td>
+							<td rowspan="2" style="padding-top: 22px;">屋上土</td>
+							<td>丙申</td>
+							<td rowspan="2" style="padding-top: 22px;">山下火</td>
+							<td>丙午</td>
+							<td rowspan="2" style="padding-top: 22px;">天河水</td>
+							<td>丙辰</td>
+							<td rowspan="2" style="padding-top: 22px;">沙中土</td>
+						</tr>
+						<tr>
+							<td>丁卯</td>
+							<td>丁丑</td>
+							<td>丁亥</td>
+							<td>丁酉</td>
+							<td>丁未</td>
+							<td>丁巳</td>
+						</tr>
+						<tr>
+							<td>戊辰</td>
+							<td rowspan="2" style="padding-top: 22px;">大林木</td>
+							<td>戊寅</td>
+							<td rowspan="2" style="padding-top: 22px;">城头土</td>
+							<td>戊子</td>
+							<td rowspan="2" style="padding-top: 22px;">霹雳火</td>
+							<td>戊戌</td>
+							<td rowspan="2" style="padding-top: 22px;">平地木</td>
+							<td>戊申</td>
+							<td rowspan="2" style="padding-top: 22px;">大驿土</td>
+							<td>戊午</td>
+							<td rowspan="2" style="padding-top: 22px;">天上火</td>
+						</tr>
+						<tr>
+							<td>己巳</td>
+							<td>己卯</td>
+							<td>己丑</td>
+							<td>己亥</td>
+							<td>己酉</td>
+							<td>己未</td>
+						</tr>
+						<tr>
+							<td>庚午</td>
+							<td rowspan="2" style="padding-top: 22px;">路旁土</td>
+							<td>庚辰</td>
+							<td rowspan="2" style="padding-top: 22px;">白蜡金</td>
+							<td>庚寅</td>
+							<td rowspan="2" style="padding-top: 22px;">松柏木</td>
+							<td>庚子</td>
+							<td rowspan="2" style="padding-top: 22px;">壁上土</td>
+							<td>庚戌</td>
+							<td rowspan="2" style="padding-top: 22px;">钗钏金</td>
+							<td>庚申</td>
+							<td rowspan="2" style="padding-top: 22px;">石榴木</td>
+						</tr>
+						<tr>
+							<td>辛未</td>
+							<td>辛巳</td>
+							<td>辛卯</td>
+							<td>辛丑</td>
+							<td>辛亥</td>
+							<td>辛酉</td>
+						</tr>
+						<tr>
+							<td>壬申</td>
+							<td rowspan="2" style="padding-top: 22px;">剑锋金</td>
+							<td>壬午</td>
+							<td rowspan="2" style="padding-top: 22px;">杨柳木</td>
+							<td>壬辰</td>
+							<td rowspan="2" style="padding-top: 22px;">长流水</td>
+							<td>壬寅</td>
+							<td rowspan="2" style="padding-top: 22px;">金箔金</td>
+							<td>壬子</td>
+							<td rowspan="2" style="padding-top: 22px;">桑拓木</td>
+							<td>壬戌</td>
+							<td rowspan="2" style="padding-top: 22px;">大海水</td>
+						</tr>
+						<tr>
+							<td>癸酉</td>
+							<td>癸未</td>
+							<td>癸巳</td>
+							<td>癸卯</td>
+							<td>癸丑</td>
+							<td>癸亥</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- 彭祖百忌 -->
+				<table class="table table-bordered table-hover table-condensed">
+					<caption>彭祖百忌</caption>
+					<thead>
+						<tr>
+							<th>天干</th>
+							<th>地支</th>
+							<th>黄道十二神</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>甲不开仓，财物耗亡</td><td>子不问卜，自惹祸殃</td><td>满可肆市，服药遭殃</td></tr>
+						<tr><td>乙不栽植，千株不长</td><td>丑不冠带，主不还乡</td><td>平可涂泥，安机吉昌</td></tr>
+						<tr><td>丙不修灶，必见灾殃</td><td>寅不祭祀，神鬼不尝</td><td>定宜进畜，入学名扬</td></tr>
+						<tr><td>丁不剃头，头主生疮</td><td>卯不穿井，水泉不香</td><td>执可捕捉，盗贼难藏</td></tr>
+						<tr><td>戊不受田，田主不祥</td><td>辰不哭泣，必主重丧</td><td>破宜治病，主必安康</td></tr>
+						<tr><td>己不破券，二比并亡</td><td>巳不远行，财物伏藏</td><td>危可捕鱼，不利行船</td></tr>
+						<tr><td>庚不经络，织机虚张</td><td>午不苫盖，屋主更张</td><td>成可入学，争讼不强</td></tr>
+						<tr><td>辛不合酱，主人不尝</td><td>未不服药，毒气入肠</td><td>收宜纳财，却忌安葬</td></tr>
+						<tr><td>壬不决水，更难提防</td><td>申不安床，鬼祟入房</td><td>建宜出行，不可开仓</td></tr>
+						<tr><td>癸不词讼，理弱敌强</td><td>酉不宴客，醉坐颠狂</td><td>除可服药，针炙宜良</td></tr>
+						<tr><td>-</td><td>戌不吃犬，作怪上床</td><td>开可求仕，安葬不详</td></tr>
+						<tr><td>-</td><td>亥不嫁娶，不利新郎</td><td>闭不竖造。只许安床</td></tr>
+					</tbody>
+				</table>
+
+				<!-- 冲煞 -->
+				<table class="table table-bordered table-hover table-condensed">
+					<caption>地支冲煞</caption>
+					<tbody>
+						<tr style="background-color: #EAE8E8;">
+							<td style="background-color: #EAE8E8;">地支</td>
+							<td>子</td>
+							<td>丑</td>
+							<td>寅</td>
+							<td>卯</td>
+							<td>辰</td>
+							<td>巳</td>
+							<td>午</td>
+							<td>未</td>
+							<td>申</td>
+							<td>酉</td>
+							<td>戌</td>
+							<td>亥</td>
+						</tr>
+						<tr>
+							<td style="background-color: #EAE8E8;">生肖</td>
+							<td>鼠</td>
+							<td>牛</td>
+							<td>虎</td>
+							<td>兔</td>
+							<td>龙</td>
+							<td>蛇</td>
+							<td>马</td>
+							<td>羊</td>
+							<td>猴</td>
+							<td>鸡</td>
+							<td>狗</td>
+							<td>猪</td>
+						</tr>
+						<tr>
+							<td style="background-color: #EAE8E8;">冲（生肖）</td>
+							<td>午</td>
+							<td>未</td>
+							<td>申</td>
+							<td>酉</td>
+							<td>戌</td>
+							<td>亥</td>
+							<td>子</td>
+							<td>丑</td>
+							<td>寅</td>
+							<td>卯</td>
+							<td>辰</td>
+							<td>巳</td>
+						</tr>
+						<tr>
+							<td style="background-color: #EAE8E8;">煞（方位）</td>
+							<td>南</td>
+							<td>东</td>
+							<td>北</td>
+							<td>西</td>
+							<td>南</td>
+							<td>东</td>
+							<td>北</td>
+							<td>西</td>
+							<td>南</td>
+							<td>东</td>
+							<td>北</td>
+							<td>西</td>
+						</tr>
+					</tbody>
+				</table>
+			</p>
+		</section> 
+
+		<!-- 星座 -->
+		<section class="tab-pane fade in" id="xingzuo">
+			<p>
+				<table class="table table-bordered table-hover">
+					<caption>十二星座基本信息</caption>
+					<thead>
+						<tr>
+							<th>标志</th>
+							<th>星座</th>
+							<th>英文</th>
+							<th>日期(公历)</th>
+							<th>属性</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>♈</td>
+							<td>白羊座</td>
+							<td>Aries</td>
+							<td>3月21日-4月20日</td>
+							<td>火象</td>
+						</tr>
+						<tr>
+							<td>♉</td>
+							<td>金牛座</td>
+							<td>Taurus</td>
+							<td>4月21日-5月21日</td>
+							<td>土象</td>
+						</tr>
+						<tr>
+							<td>♊</td>
+							<td>双子座</td>
+							<td>Gemini</td>
+							<td>5月22日-6月21日</td>
+							<td>风象</td>
+						</tr>
+						<tr>
+							<td>♋</td>
+							<td>巨解座</td>
+							<td>Cancer</td>
+							<td>6月22日-7月22日</td>
+							<td>水象</td>
+						</tr>
+						<tr>
+							<td>♌</td>
+							<td>狮子座</td>
+							<td>Leo</td>
+							<td>7月23日-8月22日</td>
+							<td>火象</td>
+						</tr>
+						<tr>
+							<td>♍</td>
+							<td>处女座</td>
+							<td>Virgo</td>
+							<td>8月23日-9月23日</td>
+							<td>土象</td>
+						</tr>
+						<tr>
+							<td>♎</td>
+							<td>天秤座	</td>
+							<td>Libra</td>
+							<td>9月24日-10月23日</td>
+							<td>风象</td>
+						</tr>
+						<tr>
+							<td>♏</td>
+							<td>天蝎座</td>
+							<td>Scorpio</td>
+							<td>10月24日-11月22日</td>
+							<td>水象</td>
+						</tr>
+						<tr>
+							<td>♐</td>
+							<td>射手座</td>
+							<td>Sagittarius</td>
+							<td>11月23日-12月21日</td>
+							<td>火象</td>
+						</tr>
+						<tr>
+							<td>♑</td>
+							<td>摩羯座</td>
+							<td>Capricorn</td>
+							<td>12月22日-1月20日</td>
+							<td>土象</td>
+						</tr>
+						<tr>
+							<td>♒</td>
+							<td>水瓶座</td>
+							<td>Aquarius</td>
+							<td>1月21日-2月19日</td>
+							<td>风象</td>
+						</tr>
+						<tr>
+							<td>♓</td>
+							<td>双鱼座</td>
+							<td>Pisces</td>
+							<td>2月20日-3月20日</td>
+							<td>水象</td>
+						</tr>
+					</tbody>
+				</table>
+			</p>
+		</section> 
+
+		<!-- 生肖 -->
+		<section class="tab-pane fade in" id="shengxiao">
+			<p>
+				
+			</p>
+		</section> 
+
+		<!-- 生辰八字 -->
+		<section class="tab-pane fade in" id="shengchengbazi">
+			<p>
+				
+			</p>
+		</section> 
+
+		<!-- 五行 -->
+		<section class="tab-pane fade in" id="wuxing">
+			<p>
+				
+			</p>
+		</section>
+
+		<!-- 袁天罡称骨诀 -->
+		<section class="tab-pane fade in" id="yuantiangangchenggujue">
+			<p>
+				<!-- 袁天罡称骨诀 -->
+				<script type="text/javascript">
+					$(document).ready(function(){
+						//列变色
+						$(".tb_odd_row_color tr").find("td:eq(0),td:eq(2),td:eq(4),td:eq(6),td:eq(8)").css("background-color", "#F3F3F3");
+					})
+				</script>
+
+				<table  class="table table-bordered table-hover table-condensed tb_odd_row_color">
+					<caption>袁天罡称骨诀 - 生辰八字骨重</caption>
+					<thead>
+						<tr>
+							<th>年份</th>
+							<th>骨重</th>
+							<th>年份</th>
+							<th>骨重</th>
+							<th>年份</th>
+							<th>骨重</th>
+							<th>年份</th>
+							<th>骨重</th>
+							<th>年份</th>
+							<th>骨重</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1941</td>
+							<td>0.6</td>
+							<td>1956</td>
+							<td>0.5</td>
+							<td>1971</td>
+							<td>1.7</td>
+							<td>1986</td>
+							<td>0.8</td>
+							<td>2001</td>
+							<td>0.6</td>
+						</tr>
+						<tr>
+							<td>1942</td>
+							<td>0.8</td>
+							<td>1957</td>
+							<td>1.4</td>
+							<td>1972</td>
+							<td>0.5</td>
+							<td>1987</td>
+							<td>0.7</td>
+							<td>2002</td>
+							<td>0.8</td>
+						</tr>
+						<tr>
+							<td>1943</td>
+							<td>0.7</td>
+							<td>1958</td>
+							<td>1.4</td>
+							<td>1973</td>
+							<td>0.7</td>
+							<td>1988</td>
+							<td>1.2</td>
+							<td>2003</td>
+							<td>0.7</td>
+						</tr>
+						<tr>
+							<td>1944</td>
+							<td>0.5</td>
+							<td>1959</td>
+							<td>0.9</td>
+							<td>1974</td>
+							<td>1.2</td>
+							<td>1989</td>
+							<td>0.5</td>
+							<td>2004</td>
+							<td>0.5</td>
+						</tr>
+						<tr>
+							<td>1945</td>
+							<td>1.5</td>
+							<td>1960</td>
+							<td>0.7</td>
+							<td>1975</td>
+							<td>0.8</td>
+							<td>1990</td>
+							<td>0.9</td>
+							<td>2005</td>
+							<td>1.5</td>
+						</tr>
+						<tr>
+							<td>1946</td>
+							<td>0.6</td>
+							<td>1961</td>
+							<td>0.7</td>
+							<td>1976</td>
+							<td>0.8</td>
+							<td>1991</td>
+							<td>0.8</td>
+							<td>2006</td>
+							<td>0.6</td>
+						</tr>
+						<tr>
+							<td>1947</td>
+							<td>1.6</td>
+							<td>1962</td>
+							<td>0.9</td>
+							<td>1977</td>
+							<td>0.6</td>
+							<td>1992</td>
+							<td>0.7</td>
+							<td>2007</td>
+							<td>1.6</td>
+						</tr>
+						<tr>
+							<td>1948</td>
+							<td>1.5</td>
+							<td>1963</td>
+							<td>1.2</td>
+							<td>1978</td>
+							<td>1.9</td>
+							<td>1993</td>
+							<td>0.8</td>
+							<td>2008</td>
+							<td>1.5</td>
+						</tr>
+						<tr>
+							<td>1949</td>
+							<td>0.7</td>
+							<td>1964</td>
+							<td>0.8</td>
+							<td>1979</td>
+							<td>0.6</td>
+							<td>1994</td>
+							<td>1.5</td>
+							<td>2009</td>
+							<td>0.7</td>
+						</tr>
+						<tr>
+							<td>1950</td>
+							<td>0.9</td>
+							<td>1965</td>
+							<td>0.7</td>
+							<td>1980</td>
+							<td>0.8</td>
+							<td>1995</td>
+							<td>0.9</td>
+							<td>2010</td>
+							<td>0.9</td>
+						</tr>
+						<tr>
+							<td>1951</td>
+							<td>1.2</td>
+							<td>1966</td>
+							<td>1.3</td>
+							<td>1981</td>
+							<td>1.6</td>
+							<td>1996</td>
+							<td>1.6</td>
+							<td>2011</td>
+							<td>1.2</td>
+						</tr>
+						<tr>
+							<td>1952</td>
+							<td>1.0</td>
+							<td>1967</td>
+							<td>0.5</td>
+							<td>1982</td>
+							<td>1.0</td>
+							<td>1997</td>
+							<td>0.8</td>
+							<td>2012</td>
+							<td>1.0</td>
+						</tr>
+						<tr>
+							<td>1953</td>
+							<td>0.7</td>
+							<td>1968</td>
+							<td>1.4</td>
+							<td>1983</td>
+							<td>0.7</td>
+							<td>1998</td>
+							<td>0.8</td>
+							<td>2013</td>
+							<td>0.7</td>
+						</tr>
+						<tr>
+							<td>1954</td>
+							<td>1.5</td>
+							<td>1969</td>
+							<td>0.5</td>
+							<td>1984</td>
+							<td>1.2</td>
+							<td>1999</td>
+							<td>1.9</td>
+							<td>2014</td>
+							<td>1.5</td>
+						</tr>
+						<tr>
+							<td>1955</td>
+							<td>0.6</td>
+							<td>1970</td>
+							<td>0.9</td>
+							<td>1985</td>
+							<td>0.9</td>
+							<td>2000</td>
+							<td>1.2</td>
+							<td>2015</td>
+							<td>0.6</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table table-bordered table-hover table-condensed">
+					<caption></caption>
+					<tbody>
+						<tr style="background-color: #EAE8E8;">
+							<td style="background-color: #EAE8E8;">月份</td>
+							<td>一月</td>
+							<td>二月</td>
+							<td>三月</td>
+							<td>四月</td>
+							<td>五月</td>
+							<td>六月</td>
+							<td>七月</td>
+							<td>八月</td>
+							<td>九月</td>
+							<td>十月</td>
+							<td>十一月</td>
+							<td>十二月</td>
+						</tr>
+						<tr>
+							<td style="background-color: #EAE8E8;">骨重</td>
+							<td>0.6	</td>
+							<td>0.7</td>
+							<td>1.8</td>
+							<td>0.9</td>
+							<td>0.5</td>
+							<td>1.6</td>
+							<td>0.9</td>
+							<td>1.5</td>
+							<td>1.8</td>
+							<td>0.8</td>
+							<td>0.9</td>
+							<td>0.5</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table table-bordered table-hover table-condensed tb_odd_row_color">
+					<caption></caption>
+					<thead>
+						<tr>
+							<th>日期</th>
+							<th>骨重</th>
+							<th>日期</th>
+							<th>骨重</th>
+							<th>日期</th>
+							<th>骨重</th>
+							<th>日期</th>
+							<th>骨重</th>
+							<th>日期</th>
+							<th>骨重</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>0.5</td>
+							<td>7</td>
+							<td>0.8</td>
+							<td>13</td>
+							<td>0.8</td>
+							<td>19</td>
+							<td>0.5</td>
+							<td>25</td>
+							<td>1.5</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>1.0</td>
+							<td>8</td>
+							<td>1.6</td>
+							<td>14</td>
+							<td>1.7</td>
+							<td>20</td>
+							<td>1.5</td>
+							<td>26</td>
+							<td>1.8</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>0.8</td>
+							<td>9</td>
+							<td>0.8</td>
+							<td>15</td>
+							<td>1.0</td>
+							<td>21</td>
+							<td>1.0</td>
+							<td>27</td>
+							<td>0.7</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>1.5</td>
+							<td>10</td>
+							<td>1.6</td>
+							<td>16</td>
+							<td>0.8</td>
+							<td>22</td>
+							<td>0.9</td>
+							<td>28</td>
+							<td>0.8</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>1.6</td>
+							<td>11</td>
+							<td>0.9</td>
+							<td>17</td>
+							<td>0.9</td>
+							<td>23</td>
+							<td>0.8</td>
+							<td>29</td>
+							<td>1.6</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>1.5</td>
+							<td>12</td>
+							<td>1.7</td>
+							<td>18</td>
+							<td>1.8</td>
+							<td>24</td>
+							<td>0.9</td>
+							<td>30</td>
+							<td>0.6</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table table-bordered table-hover table-condensed">
+					<caption></caption>
+					<tbody>
+						<tr style="background-color: #EAE8E8;">
+							<td style="background-color: #EAE8E8;">时辰</td>
+							<td>子</td>
+							<td>丑</td>
+							<td>寅</td>
+							<td>卯</td>
+							<td>辰</td>
+							<td>巳</td>
+							<td>午</td>
+							<td>未</td>
+							<td>申</td>
+							<td>酉</td>
+							<td>戌</td>
+							<td>亥</td>
+						</tr>
+						<tr>
+							<td style="background-color: #EAE8E8;">骨重</td>
+							<td>1.6</td>
+							<td>0.6</td>
+							<td>0.7</td>
+							<td>1</td>
+							<td>0.9</td>
+							<td>1.6</td>
+							<td>1</td>
+							<td>0.8</td>
+							<td>0.8</td>
+							<td>0.9</td>
+							<td>0.6</td>
+							<td>0.6</td>
+						</tr>
+						<tr>
+							<td style="background-color: #EAE8E8;">时辰段</td>
+							<td>23~1</td>
+							<td>1~3</td>
+							<td>3~5</td>
+							<td>5~7</td>
+							<td>7~9</td>
+							<td>9~11</td>
+							<td>11~13</td>
+							<td>13~15</td>
+							<td>15~17</td>
+							<td>17~19</td>
+							<td>19~21</td>
+							<td>21~23</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table class="table table-bordered table-hover table-condensed tb_odd_row_color">
+					<caption>袁天罡称骨诀 - 骨重解析</caption>
+					<tbody>
+						<tr><td>2两1<td>短命非业谓大凶，平生灾难事重重，凶祸频临限逆境，终世困苦事不成</td><td>4两7<td>此命推来旺末年，妻荣子贵自怡然，平生原有滔滔福，可有财源如水流</td></tr>
+						<tr><td>2两2<td>身寒骨冷苦伶仃，此命推来行乞人，劳劳碌碌无度日，中年打拱过平生</td><td>4两8<td>幼年运道未曾享，苦是蹉跎再不兴，兄弟六亲皆无靠，一身事业晚年成</td></tr>
+						<tr><td>2两3<td>此命推来骨轻轻，求谋做事事难成，妻儿兄弟应难许，别处他乡作散人</td><td>4两9<td>此命推来福不轻，自立自成显门庭，从来富贵人亲近，使婢差奴过一生</td></tr>
+						<tr><td>2两4<td>此命推来福禄无，门庭困苦总难荣，六亲骨肉皆无靠，流到他乡作老人</td><td>5两<td>为利为名终日劳，中年福禄也多遭，老来是有财星照，不比前番目下高</td></tr>
+						<tr><td>2两5<td>此命推来祖业微，门庭营度似希奇，六亲骨肉如水炭，一世勤劳自把持</td><td>5两1<td>一世荣华事事通，不须劳碌自亨通，兄弟叔侄皆如意，家业成时福禄宏</td></tr>
+						<tr><td>2两6<td>平生一路苦中求，独自营谋事不休，离祖出门宜早计，晚来衣禄自无忧</td><td>5两2<td>一世亨通事事能，不须劳思自然能，宗施欣然心皆好，家业丰亨自称心</td></tr>
+						<tr><td>2两7<td>一生做事少商量，难靠祖宗作主张，独马单枪空作去，早年晚岁总无长</td><td>5两3<td>此格推来气象真，兴家发达在其中，一生福禄安排定，却是人间一富翁</td></tr>
+						<tr><td>2两8<td>一生作事似飘蓬，祖宗产业在梦中，若不过房并改姓，也当移徒二三通</td><td>5两4<td>此命推来厚且清，诗书满腹看功成，丰衣足食自然稳，正是人间有福人</td></tr>
+						<tr><td>2两9<td>初年运限未曾亨，纵有功名在后成，须过四旬方可上，移居改姓使为良</td><td>5两5<td>走马扬鞭争名利，少年做事废筹论，一朝福禄源源至，富贵荣华显六亲</td></tr>
+						<tr><td>3两<td>劳劳碌碌苦中求，东走西奔何日休，若能终身勤与俭，老来稍可免忧愁</td><td>5两6<td>此格推来礼仪通，一生福禄用无穷，甜酸苦辣皆尝过，财源滚滚稳且丰</td></tr>
+						<tr><td>3两1<td>忙忙碌碌苦中求，何日云开见日头，难得祖基家可立，中年衣食渐无忧</td><td>5两7<td>福禄盈盈万事全，一生荣耀显双亲，名扬威震人钦敬，处世逍遥似遇春</td></tr>
+						<tr><td>3两2<td>初年运错事难谋，渐有财源如水流，到的中年衣食旺，那时名利一齐来</td><td>5两8<td>平生福禄自然来，名利兼全福禄偕，雁塔提名为贵客，紫袍金带走金鞋</td></tr>
+						<tr><td>3两3<td>早年做事事难成，百计徒劳枉费心，半世自如流水去，后来运到始得金</td><td>5两9<td>细推此格妙且清，必定才高礼仪通，甲第之中应有分，扬鞭走马显威荣</td></tr>
+						<tr><td>3两4<td>此命福气果如何，僧道门中衣禄多，离祖出家方得妙，终朝拜佛念弥陀</td><td>6两<td>一朝金榜快提名，显祖荣宗立大功，衣食定然原欲足，田园财帛更丰盈</td></tr>
+						<tr><td>3两5<td>生平福量不周全，祖业根基觉少传，营事生涯宜守旧，时来衣食胜从前</td><td>6两1<td>不做朝中金榜客，定为世上一财翁，聪明天赋经书熟，名显高克自是荣</td></tr>
+						<tr><td>3两6<td>不须劳碌过平生，独自成家福不轻，早有福星常照命，任君行去百般成</td><td>6两2<td>此名生来福不穷，读书必定显亲荣，紫衣金带为卿相，富贵荣华皆可同</td></tr>
+						<tr><td>3两7<td>此命般般事不成，弟兄少力自孤成，虽然祖业须微有，来的明时去的暗</td><td>6两3<td>命主为官福禄长，得来富贵定非常，名题金塔传金榜，定中高科天下扬</td></tr>
+						<tr><td>3两8<td>一生骨肉最清高，早入学门姓名标，待看年将三十六，蓝衣脱去换红袍</td><td>6两4<td>此格权威不可当，紫袍金带坐高堂，荣华富贵谁能及，积玉堆金满储仓</td></tr>
+						<tr><td>3两9<td>此命少年运不通，劳劳做事尽皆空，苦心竭力成家计，到得那时在梦中</td><td>6两5<td>细推此命福不轻，安国安邦极品人，文绣雕梁政富贵，威声照耀四方闻</td></tr>
+						<tr><td>4两<td>平生衣禄是绵长，件件心中自主张，前面风霜都受过，从来必定享安泰</td><td>6两6<td>此格人间一福人，堆金积玉满堂春，从来富贵由天定，正笏垂绅谒圣君</td></tr>
+						<tr><td>4两1<td>此命推来事不同，为人能干异凡庸，中年还有逍遥福，不比前年云未通</td><td>6两7<td>此名生来福自宏，田园家业最高隆，平生衣禄丰盈足，一世荣华万事通</td></tr>
+						<tr><td>4两2<td>得宽怀处且宽怀，何用双眉总不开，若使中年命运济，那时名利一齐来</td><td>6两8<td>富贵由天莫苦求，万金家计不须谋，十年不比前番事，祖业根基水上舟</td></tr>
+						<tr><td>4两3<td>为人心性最聪明，做事轩昂近贵人，衣禄一生天数定，不须劳碌是丰亨</td><td>6两9<td>君是人间衣禄星，一生福贵众人钦，纵然福禄由天定，安享荣华过一生</td></tr>
+						<tr><td>4两4<td>来事由天莫苦求，须知福禄胜前途，当年财帛难如意，晚景欣然便不忧</td><td>7两<td>此命推来福不轻，不须愁虑苦劳心，一生天定衣与禄，富贵荣华过一生</td></tr>
+						<tr><td>4两5<td>福中取贵格求真，明敏才华志自伸，福禄寿全家道吉，桂兰毓秀晚荣臻</td><td>7两1<td>此名生来大不同，公侯卿相在其中，一生自有逍遥福，富贵荣华极品隆</td></tr>
+						<tr><td>4两6<td>东西南北尽皆通，出姓移名更觉隆，衣禄无亏天数定，中年晚景一般同</td><td>7两2<td>此格世界罕有生，十代积善产此人，天上紫微来照命，统治万民乐太平</td></tr>
+					</tbody>
+				</table>
+			</p>
+		</section>
+
+	</article>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
